@@ -48,7 +48,7 @@ Task.find(function(err, tasks){
   }
   else{
     tasks.forEach(function(task){
-      if (completed === false){
+      if (task.completed == false){
         console.log(task.description);
       }
     });
